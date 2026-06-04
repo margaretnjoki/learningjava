@@ -8,7 +8,5 @@ public class Exercise7 {
         System.out.println("Oh, how interesting.Tell me more!");
         String more= scanner.nextLine();
         System.out.println("Thanks for sharing");
-
-
     }
 }
