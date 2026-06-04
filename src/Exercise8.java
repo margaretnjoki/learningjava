@@ -9,8 +9,8 @@ public class Exercise8 {
         System.out.println("What is their job?");
         String job= scanner.nextLine();
         System.out.println("Here is the story");
-        System.out.println("Once Upon a time there was Bob, who was a builder.");
-        System.out.println("On the way to work, Bob reflected on life");
-        System.out.println("Perhaps Bob will not be a builder forever.");
+        System.out.println("Once Upon a time there was " + name + " who was a " + job);
+        System.out.println("On the way to work " + name + " reflected on life");
+        System.out.println("Perhaps " + name +" will not be a " +  job + " forever.");
     }
 }
