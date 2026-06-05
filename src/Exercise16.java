@@ -4,7 +4,8 @@ public class Exercise16 {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Give speed:");
         int speed = Integer.valueOf(scanner.nextLine());
-        if (speed > 120)
+        if (speed > 120) {
             System.out.println("Speeding ticket!");
+        }
     }
 }
