@@ -1,8 +1,20 @@
-public class Main{
+public class Main {
     public static void main(String[] args) {
-        while(true){
-            System.out.println("maggy");
-            break;
-        }
+        greet();
+        myName();
+        greet();
+        greet();
+        greet();
+        greet();
+        greet();
+        myName();
+    }
+
+    public static void greet() {
+        System.out.println("good morning");
+    }
+
+    public static void myName() {
+        System.out.println("maggy");
     }
 }
