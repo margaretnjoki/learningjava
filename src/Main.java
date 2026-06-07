@@ -1,17 +1,10 @@
-import java.util.Scanner;
-
 public class Main {
     public static void main(String[] args) {
-        greet(2);
+        System.out.println(average(2,4,6));
     }
 
-    public static void greet(int endOfLoop) {
-        for (int i=0; i< endOfLoop; i++ ){
-            System.out.println("good morning");
-        }
-    }
-
-    public static void addTwoNumber(int a, int b) {
-        System.out.println("Sum="+(a+b));
+    public static double  average(int a, int b, int c){
+        double average= (a + b+ c)/ (double)3;
+        return average;
     }
 }
