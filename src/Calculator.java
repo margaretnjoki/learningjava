@@ -9,8 +9,10 @@ public class Calculator {
             int choice = Integer.parseInt(scanner.nextLine());
 
             if (choice == 5) {
-                break;
+                System.out.println("exit");
+                continue;
             }
+
 
             processCalculation(choice);
         }
@@ -57,10 +59,17 @@ public class Calculator {
             System.out.println(num1 + " + " + num2 + " = " + add(num1, num2));
         } else if (choice == 2) {
             System.out.println(num1 + " - " + num2 + " = " + sub(num1, num2));
-        } else {
-            System.out.println("Invalid choice");
+        } else if (choice == 3) {
+            System.out.println(num1 + " * " + num2 + " = " + mul(num1, num2));
+        } else if (choice == 4) {
+            if (num2 == 0) {
+                System.out.println("Error: impossible to divide by zero");
+            } else {
+                System.out.println(num1 + " / " + num2 + " = " + div(num1, num2));
+            }
         }
     }
 }
+
 
 
