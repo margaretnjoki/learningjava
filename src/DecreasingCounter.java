@@ -10,13 +10,24 @@ public class DecreasingCounter {
     }
 
     public void decrement() {
-        this.value= this.value - 1;
+        if (this.value > 0){
+            this.value= this.value - 1;
+        }
+
 
     }
 }
  class Counter{
      public static void main(String[] args) {
          DecreasingCounter  counter=new DecreasingCounter(4);
+         counter.printValue();
+         counter.decrement();
+         counter.printValue();
+         counter.decrement();
+         counter.printValue();
+         counter.decrement();
+         counter.printValue();
+         counter.decrement();
          counter.printValue();
          counter.decrement();
          counter.printValue();
