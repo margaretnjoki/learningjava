@@ -1,10 +1,12 @@
-public class Exercise58 {
+public class Grading {
     public static void main(String[] args) {
         displayStudentsName("Maggie");
         calculateTotalMarks(30,40,60);
         int total = calculateTotalMarks(30, 40, 60);
+        System.out.println("total marks: " + total);
         averageMarks(total );
         double average=total/(double)3;
+        System.out.println("average: " + average);
         passedOrFailed(average);
     }
 
