@@ -5,7 +5,8 @@ public class DecreasingCounter {
         this.value = initialValue;
     }
 
-    public void printValue() {
+    public void printValue()
+    {
         System.out.println("value: " + this.value);
     }
 
@@ -13,8 +14,9 @@ public class DecreasingCounter {
         if (this.value > 0){
             this.value= this.value - 1;
         }
-
-
+    }
+    public void reset(){
+        this.value= 0;
     }
 }
  class Counter{
@@ -25,12 +27,11 @@ public class DecreasingCounter {
          counter.printValue();
          counter.decrement();
          counter.printValue();
-         counter.decrement();
+         counter.reset();
          counter.printValue();
-         counter.decrement();
+         counter.reset();
          counter.printValue();
-         counter.decrement();
-         counter.printValue();
+
      }
 
 
