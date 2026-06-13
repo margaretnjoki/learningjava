@@ -18,6 +18,9 @@ public class Book {
         return this.title;
     }
 
+    public String toString() {
+        return "title: " + title   + " pages: " + numberOfPages + " publicationYear: " + publicationYear;
+    }
 }
 
 class BookMain{
@@ -26,6 +29,32 @@ class BookMain{
     Scanner scanner=new Scanner(System.in);
     ArrayList<Book> books = new ArrayList<>();
 
+    while (true){
+        System.out.println("Enter title: ");
+        String title= scanner.nextLine();
+        if (title.isEmpty()){
+            break;
+        }
+        System.out.println("pages: ");
+        int numberOfPages= Integer.valueOf(scanner.nextLine());
+        System.out.println("publication year: ");
+        int pub=Integer.valueOf(scanner.nextLine()) ;
+
+        books.add(new Book(title, numberOfPages, pub));
     }
 
+        System.out.println("what information will be printed? ");
+            String printed= scanner.nextLine();
+
+        if (printed.equals("everything")){
+            for (Book book:books){
+                System.out.println(book);
+            }
+        }
+        if (printed.equals("name")){
+            for (Book book: books){
+                System.out.println(book.getTitle());
+            }
+        }
+    }
 }
