@@ -1,39 +1,39 @@
 public class CounterClass {
-private int value;
+    private int value;
 
-    public CounterClass(int startValue){
-       this.value=startValue ;
+    public CounterClass(int startValue) {
+        this.value = startValue;
     }
 
-    public CounterClass(){
-        this.value=0;
+    public CounterClass() {
+        this.value = 0;
     }
 
-    public int value(){
+    public int value() {
         return this.value;
     }
 
-    public void increase(){
-        this.value=this.value + 1;
+    public void increase() {
+        this.value = this.value + 1;
     }
 
-    public void decrease(){
-        this.value=this.value - 1;
+    public void decrease() {
+        this.value = this.value - 1;
     }
 
-        public void increase(int increaseBy){
-            if (increaseBy < 0) {
-                return;
-            }
+    public void increase(int increaseBy) {
+        if (increaseBy < 0) {
+            return;
+        }
 
-        this.value= this.value + increaseBy;
+        this.value = this.value + increaseBy;
     }
 
-    public void decrease(int decreaseBy){
+    public void decrease(int decreaseBy) {
         if (decreaseBy < 0) {
             return;
         }
-        this.value =  this.value - decreaseBy;
+        this.value = this.value - decreaseBy;
     }
 
     public String toString() {
@@ -42,9 +42,9 @@ private int value;
     }
 }
 
-class CounterClassMain{
+class CounterClassMain {
     public static void main(String[] args) {
-        CounterClass counter=new CounterClass();
+        CounterClass counter = new CounterClass();
         System.out.println(counter);
     }
 }
