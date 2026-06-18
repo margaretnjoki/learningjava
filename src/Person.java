@@ -4,9 +4,16 @@ public class Person {
     private int age;
     private int weight;
     private int height;
+    private Pet pet;
 
     public Person(String name) {
         this(name, 0, 0, 0);
+    }
+
+    public Person(String name, Pet pet) {
+        this.name = name;
+        this.pet = pet;
+
     }
 
     public Person(String name, int age, int height, int weight) {
@@ -28,7 +35,8 @@ public class Person {
     public int getHeight() {
         return this.height;
     }
-    public int getWeight(){
+
+    public int getWeight() {
         return this.weight;
     }
 
@@ -51,6 +59,20 @@ public class Person {
 
 
     public String toString() {
-        return this.name + ", age " + this.age + " years";
+        return this.name + ", has a pet called " + this.pet.getName() + " "  + "(" + this.pet.getBreed() + ")";
     }
 }
+
+
+
+
+class PersonMain{
+    public static void main(String[] args) {
+        Pet lucy = new Pet("Lucy", "golden retriever");
+        Person leo = new Person("Leo", lucy);
+
+        System.out.println(leo);
+    }
+
+}
+
