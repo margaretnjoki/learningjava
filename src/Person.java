@@ -16,6 +16,13 @@ public class Person {
 
     }
 
+    public Person(String name, int height){
+        this.name= name;
+        this.height=height;
+    }
+
+
+
     public Person(String name, int age, int height, int weight) {
         this.name = name;
         this.age = age;
@@ -24,7 +31,9 @@ public class Person {
     }
 
 
-    public String getName() {
+
+    public String getName()
+    {
         return this.name;
     }
 
@@ -59,7 +68,8 @@ public class Person {
 
 
     public String toString() {
-        return this.name + ", has a pet called " + this.pet.getName() + " "  + "(" + this.pet.getBreed() + ")";
+        return  this.name + " " + " "  +this.height + "cm";
+     //   return this.name + ", has a pet called " + this.pet.getName() + " "  + "(" + this.pet.getBreed() + ")";
     }
 }
 
