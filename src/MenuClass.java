@@ -25,7 +25,6 @@ public class MenuClass {
     public void clearMenu() {
         this.meals.clear();
 
-
     }
 }
 
