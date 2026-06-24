@@ -31,7 +31,7 @@ public class StorageFacility {
 
         ArrayList<String> items = storage.get(storageUnit);
 
-        items.remove(item); // removes only ONE occurrence
+        items.remove(item);
 
         if (items.isEmpty()) {
             storage.remove(storageUnit);
