@@ -28,6 +28,7 @@ public class Average {
                     .filter(s -> s > 0)
                     .average()
                     .getAsDouble();
+            System.out.println("average of positive numbers: " + average);
 
         } else {
             double average = numbers.stream()
@@ -37,7 +38,7 @@ public class Average {
                     .getAsDouble();
 
 
-            System.out.println(average);
+            System.out.println("average of negative numbers:  " + average);
         }
 
 
